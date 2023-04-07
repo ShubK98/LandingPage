@@ -339,8 +339,7 @@ header {
                                                                     animation: zoomies3 1.4s ease-in;
 
                                                                         }
-                                                                        .section__title--Res:hover{
-                                                                        }
+                                                                       
                                                                     
                                                                 } 
 
@@ -653,22 +652,7 @@ position: relative;
 /* animation: 35s panel infinite ease-in-out; */
 }
 
-@keyframes panel{
-    
-    0%{
-        backdrop-filter: none;
-    }
-  
-    50%{
-        backdrop-filter: blur(4px);
-       
-    }
 
-    100%{
-        backdrop-filter: none;
-    }
-   
-}
 
 .bb{
 /* color: rgb(0, 0, 0);
@@ -791,11 +775,7 @@ font-weight: 600;
     }
 }
 
-.wallback
-{
-   
-  
-}
+
 
 .wallcont{
     min-width: 300px;
