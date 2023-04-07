@@ -1,0 +1,1056 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties, update these for your own design */
+
+:root {
+    --ff-primary: 'Lora', serif;
+    --ff-secondary: 'Roboto Slab', serif;
+    
+    --fw-reg: 400;
+    --fw-bold: 700;
+    
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+    
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* General styles */
+
+/* endable this to add smooth scrolling */
+ html{
+    scroll-behavior: smooth ;
+    overflow: hidden;
+
+ } 
+
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    overflow: hidden;
+
+    background-color: #0e49a8c2; 
+    /* background-color: #0e77a86b;  */
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+@keyframes zoomies{
+    
+    0%{
+        background-color: var(--clr-dark);                       
+    }
+     85%{
+        background-color: #747474;                       
+    }
+    100%{
+        background-color: #9F9F9F;
+    }
+   
+}
+
+@keyframes zoomies2{
+    
+    0%{
+        background-color: #6e6e6e;  
+        color: white;                     
+    }
+     85%{
+        background-color: #9F9F9F; 
+        color: white;                           
+    }
+    100%{
+        background-color: #6e6e6e;  
+        color: white; 
+    }
+   
+}
+
+@keyframes zoomies6{
+    
+    0%{
+        background-color: #ff7f5075;  
+    }
+     85%{
+        background-color: transparent; 
+    }
+    100%{
+        background-color: #ff7f5075;
+    }
+   
+}
+
+@keyframes zoomiesh{
+    
+    0%{
+        transform: scaleY(0);
+    }
+    /* 50%{
+        height: 0.5;
+    } */
+     
+    100%{
+        transform: scaleY(1);
+    }
+   
+}
+
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    display: none;
+}
+            @media (max-width: 600px)
+            {
+                header {
+                
+                   min-height: 3.2em;
+                  /* background-color: rgb(68, 68, 68);  */
+                  background-image: linear-gradient(45deg,#414141,#414141,#414141,black,#414141,#414141,#414141);
+                  background-size: 400%;
+                  
+                  animation: zoomies 8s infinite alternate-reverse;
+                }    
+                
+                /* @keyframes zoomies{
+                    0%{
+                        background-color: #f5f5f5;
+                    }
+                    100%{
+                        background-color: #3777d6;                       
+                    }
+                } */
+            }     
+
+            .wrp{
+                background-color: #d1d1d16b;
+                padding: 2px;
+                width: 90%;
+                margin-left: auto;
+                margin-right:auto  ;
+                margin-top: 90px;
+
+                border: 2px solid #6969699f;
+                border-top: 1px solid #ffffff93;
+                border-bottom:1px solid #ffffff93;
+                border-radius: 6px;
+
+                box-shadow: 4px 8px 6px 2px grey;
+                transition: 200ms;
+
+            }
+            @media(min-width:600px)
+                {
+                    h2.section__title--Res
+                    {
+                        padding: 1em;
+                        margin-top: 0em;
+                        transition: 3s ease-in;
+                        
+                        border-right: 0;
+                        margin: 10px;
+                       
+                    }
+                    
+                    .but1{
+                        padding: 4em;
+                        animation: zoomies3 1.8s ease-in;
+                    }
+                    .but2
+                    {
+                        animation: zoomies3 1.8s ease-in;
+                    }
+                
+                }
+
+                                                                .Myres
+                                                                {   
+                                                                    max-width: 1000px;
+                                                                    text-align: center;
+                                                                    margin:auto;
+                                                                    height:fit-content;
+                                                                    padding-bottom: 0vh;
+                                                                    padding-top: 12vh;
+                                                                    height: 100vh;
+                                                                   
+                                                                    /* animation: zoomies 2s ease-in; */
+                                                                }
+                                                                
+                                                                .Res
+                                                                {
+                                                                    background-color: #9F9F9F;
+                                                                   
+
+                                                                   
+                                                                }
+                                                                @media(max-width:600px)
+                                                                {
+                                                                    .wrp
+                                                                    {
+                                                                        animation: zoomiesh 0.6s ease-in; 
+                                                                    }
+                                                                    .Res
+                                                                    {
+                                                                        
+                                                                        padding-top: 1.6em;;
+                                                                    }
+                                                                }
+
+                                                                .section__title--Res
+                                                                {   margin-top: 3em;
+                                                                    padding:0.5em 0em;
+                                                                    margin-bottom: 0.5em; 
+                                                                    background-color: var var(--clr-accent);
+                                                                    border-radius: 5px;
+                                                                    border-bottom:1px solid #30303094;
+                                                                    border-right:1px solid #30303094;
+                                                                    /* border-left:1px solid #30303094; */
+                                                                    box-shadow: 2px 4px 5px 0px #46464671;
+                                                                    font-size: 30px;
+                                                                    
+                                                                    white-space:nowrap;
+
+                                                                }
+                                                                
+                                                                
+                                                                .buttn
+                                                                {   
+                                                                    background-color:#ffcc99a2;
+                                                                    color: var(--clr-dark);
+                                                                    margin-top: -1.5em;
+                                                                    margin-bottom: 1em;
+                                                                    padding:18px;
+                                                                    white-space:nowrap;
+                                                                    font-weight: 570;
+                                                                    border-radius: 4px;
+                                                                    margin:8px;
+                                                                    font-size: 20px;
+                                                                    cursor: pointer;
+                                                                    text-decoration: none;
+                                                                    border:2px solid #30303096;     
+                                                                    border-top:2px solid transparent;
+                                                                    border-left:2px solid transparent;      
+                                                                    display: inline-block;
+                                                                    padding: 20px 0px;
+                                                                    width: 46%;
+                                                                    box-shadow: 2px 4px 5px 0px #46464671;
+                                                                    transition: 0.3s;
+
+                                                                }
+
+                                                                @media(min-width:600px)
+                                                                {
+                                                                    .buttn
+                                                                    {
+                                                                        padding: 2em;
+                                                                    }
+                                                                }
+
+                                                                .buttn:hover
+                                                                {
+                                                                    border:2px solid #30303067;
+                                                                    border-bottom:2px solid transparent;
+                                                                    border-right:2px solid transparent;
+                                                                    background-color: #e2aa8c9a;  /*#d6a78d*/
+                                                                    box-shadow: 0px 0px 0px 0px ;
+                                                                    
+                                                                /*    transform:scale(0.98);    */
+                                                                }
+                                                                @media (max-width: 600px)
+                                                                {
+                                                                
+                                                                    .Myres 
+                                                                        {
+                                                                       height: 90%;
+                                                                       padding-bottom: 2em;
+                                                                       /* animation: zoomies 4s ease-in; */
+                                                                       
+                                                                        }
+                                                                    .buttn
+                                                                        {
+                                                                            display: block;
+                                                                            width:60%;
+                                                                            margin:10px;
+                                                                            margin-left: auto;
+                                                                            margin-right: auto;
+                                                                            margin-bottom: 5px;
+                                                                            width: 95%;
+                                                                            font-size: large;
+                                                                            padding: 18px 0px;
+                                                                            
+                                                                            white-space:nowrap;
+                                                                            
+
+
+                                                                        }
+
+                                                                        .buttn:hover{
+                                                                            transform: scale(0.95);
+                                                                        }
+                                                                        .but1{
+                                                                            animation: zoomies3 2s ease-in;
+                                                                        }
+                                                                        .but2{
+                                                                            animation: zoomies3 2.6s ease-in;
+                                                                        }
+                                                                        .section__title--Res
+                                                                        {
+                                                                            width: 95%;
+                                                                            margin:auto;
+                                                                            margin-top: 8px;
+                                                                            margin-bottom: 8px;
+                                                                            background-color: #ffffff15;
+                                                                            transition: 300ms;
+                                                                            border-right: 0px;
+                                                                    animation: zoomies3 1.4s ease-in;
+
+                                                                        }
+                                                                        .section__title--Res:hover{
+                                                                        }
+                                                                    
+                                                                } 
+
+                                                                @keyframes zoomies3{
+    
+                                                                    0%{
+                                                                        width: 0;
+                                                                        color: transparent;
+                                                                    }
+                                                                    60%{    
+                                                                        color: transparent;
+                                                                    }
+                                                                     85%{
+
+                                                                        color: transparent;
+                                                                    }
+                                                                    100%{
+                                                                        width: 1;
+                                                                       
+                                                                    }
+                                                                   
+                                                                }
+.kuchb
+{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    position: relative;
+    font-size: x-large;
+    width: 100%;
+    /* background-color: #6e6e6e83;   */
+    background-color: #5a545269;  
+    color: white; 
+    align-content: center;
+    border-bottom: 1px solid #30303048;
+    padding: 10px;
+}
+
+.set{
+  background-color: #75aaff;
+  height: 200px; 
+  position: inherit;
+}
+
+.cloud{
+height: 60px;
+width: 120px;
+opacity: 60%;
+position: absolute;
+left:-40%;
+animation: zoom 11s infinite linear, 12s loadclouds ease-in ;
+}
+.cloud1{
+    scale: 0.7;
+    top:240px;
+    animation-duration: 61s;
+    
+}
+.cloud2{
+    scale: 1.6;
+    top:140px;
+    animation-duration: 45s;
+}
+.cloud3{
+    scale: 1;
+    top:410px;
+    animation-duration: 76s;
+}
+.cloud4{
+    scale: 2;
+    top: 290px;
+    animation-duration: 51s;
+}
+
+.cloud5{
+    scale: 1.4;
+    top:350px;
+    animation-duration: 27s;
+    left: -44;
+}
+.cloud6{
+    scale: 0.8;
+    top:600px;
+    animation-duration: 36s;
+    left: -60;
+}
+.cloud7{
+    scale: 1.2;
+    top:110px;
+    animation-duration: 40s;
+    left: -30;
+}
+
+.item{
+
+}
+
+@keyframes zoom{
+    from{}
+    to{
+        left: 130%;
+    }
+}
+
+@keyframes loadclouds{
+    from{opacity: 0;}
+    to{
+        opacity: 1;
+    }
+}
+
+.kuchb strong{
+    font-size: x-large;
+    
+}
+
+.kuchb p{
+    /* background-color: #b4afafbd; */
+    background-image: linear-gradient(55deg,#335cc434,#9f9f9f,#3266bab4,#051b7a00);
+    width: 85%;
+    color: black;
+    border-radius: 4px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px 40px;
+    /* border-bottom: 2px solid #3030308a; */
+    border-right: 2px solid #156684a0;
+    /* border-top: 1px solid #fdf9f963; */
+    border-left: 2px solid #e4e4e45b;
+    border-radius: 24px;
+    background-size: 400% ;
+    animation: flash 6s infinite alternate ease-in;
+}
+
+@keyframes flash{
+    
+    0%{
+        background-position: left;
+    }
+  
+    100%{
+        background-position: right;
+       
+    }
+   
+}
+
+
+.maincontent{
+    padding:10%;
+    flex: 1 1 80%;
+    min-height: 100vh;
+}
+
+.wrap{
+display: grid;
+height: auto;
+grid-template-rows: repeat(6, 100px);
+grid-template-columns: repeat(3, 33%);
+grid-gap: 4px;
+overflow-x: wrap;
+}
+
+.fa-user{
+    scale: 2;
+    display: block;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.fa-briefcase{
+    scale: 1.4;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.fa-file{
+    scale: 1.8;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.fa-heart{
+    scale: 1.4;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+}
+.fa-star{
+    scale: 1.4;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+
+.fa-user-graduate{
+    scale: 1.6;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.fa-envelope{
+    scale: 2;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.fa-linkedin{
+    scale: 2.2;
+    color: white;
+    text-shadow: 0.5px 1px 1px #000000;
+}
+
+.fa-github{
+    scale: 2.2;
+    color: white;
+    text-shadow: 0.5px 1px 1px #000000;
+}
+
+.fa-phone{
+    scale: 1.6;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+i{
+    display: block;
+}
+
+.reb{
+    position: absolute;
+    top: 0;
+    padding: 5px;
+    background-color: #0e77a844;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+}
+.rea{
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    background-color: #0e77a844;
+    width: 100%;
+    text-align: end;
+    border-radius: 4px;
+}
+
+.small a{
+    position: absolute;
+    bottom: 4%;
+}
+.medium a{
+    position: absolute;
+    bottom: 22%;
+}
+
+.tall a{
+    position: absolute;
+    bottom: 22%;
+}
+
+
+.long a{
+    /* background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 10%, rgba(0,0,0,0) 100%); */
+    /* border-bottom: 1px solid #3e3e3ea0; */
+    border-right: 3px solid #156684a0;
+    border-left: 3px solid #aac0dda0;;
+    padding: 1rem;
+    margin: 0px 2px;
+    border-radius: 35%;
+}
+
+
+.item{
+    /* margin: 2px; */
+display: flex;
+justify-content: center;
+align-items: center;
+background: #5f94cd57;
+box-shadow: 2px 2px 2px 0 rgba(16, 16, 16, 0.572);
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 6px );
+border-radius: 2px;
+
+border-right: 2px solid rgba(135, 166, 234, 0.618);
+border-bottom: 2px solid rgba(135, 166, 234, 0.618);
+
+color: whitesmoke;
+font-weight: 100;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+text-shadow: 2px 2px 1px black;
+
+justify-content: center;
+align-items: center;
+/* border-bottom: 4px solid rgba(0, 0, 0, 0.438);
+border-right: 4px solid rgba(0, 0, 0, 0.438); */
+}
+
+.item.plan{
+background-color: rgba(0, 0, 0, 0.395);
+/* border: 0px 0px solid; */
+backdrop-filter: none;
+position: relative;
+/* animation: 35s panel infinite ease-in-out; */
+}
+
+@keyframes panel{
+    
+    0%{
+        backdrop-filter: none;
+    }
+  
+    50%{
+        backdrop-filter: blur(4px);
+       
+    }
+
+    100%{
+        backdrop-filter: none;
+    }
+   
+}
+
+.bb{
+/* color: rgb(0, 0, 0);
+background-color: rgb(196, 196, 196);
+padding: 2px;
+width: 100%; */
+font-weight: 600;
+}
+
+
+.item.medium{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.item.wide{
+    grid-column: span 2;
+}
+.item.tall{position: relative;
+    grid-row: span 2;
+}
+.item.long{
+    grid-column: span 3;
+}
+
+.partition
+{
+    display:flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    max-width: 1000px;
+    width:auto;
+
+   
+    margin:auto;
+}
+.box
+{   
+    margin:auto;
+    width:43%;
+    min-width: 250px;
+    text-align:centers;
+    font-weight: 600;
+    letter-spacing: 1px;
+    min-height:350px;
+    margin:auto;
+    border-radius: 10px;
+    color:var(--clr-dark);
+    display: inline-block;
+    height: 404px;
+}
+
+#one
+{
+    background-color: var(--clr-light);
+    
+}
+
+#two
+{
+    background-color: var(--clr-light);
+  
+}
+
+@media (max-width: 600px)
+    {
+        .my-work
+        {
+            padding-top: 7.5em;
+        }
+        #two{
+           margin-top: 20px;
+        }    
+    }            
+      
+
+.skillhead
+{   
+    padding:20px;
+    background-color: #16e0bd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.upp{
+    margin-bottom: 2em;
+    position: absolute;
+    right: 5%;
+    padding:2px 16px ;
+    font-size: 55px;
+    color: var(--clr-accent);
+    transition: 0.2s;
+    background-color: transparent;
+    filter: blur();
+    overflow: hidden;
+    border: 4px solid var(--clr-accent);
+    border-bottom:4px solid cornflowerblue;
+    border-right:4px solid cornflowerblue;
+    border-radius: 50%;
+    
+    box-shadow: 5px 5px 10px 0px var(--clr-accent);
+}
+.upp:hover{
+   transform: scale(0.96);
+   box-shadow: 4px 4px 8px 0px var(--clr-accent);
+
+}
+
+@media(max-width:600px)
+{
+    .upp{
+        border: 4px solid white;
+        transform: scale(0.65);
+        box-shadow:0px 0px 40px 5px black;
+        color: whitesmoke;
+    }
+    .upp:hover{
+        transform:scale(0.46);
+        box-shadow: 3px 5px 100px 10px black;
+    }
+}
+
+.wallback
+{
+   
+  
+}
+
+.wallcont{
+    min-width: 300px;
+    max-width: 780px;
+    min-height: 350px;
+    margin: auto auto;
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 1.5em;
+    border-radius: 4px;
+    flex: 1;
+}
+.wallcont h3{
+    background-color: rgba(255, 255, 255,   0.5) ;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.wallhead{
+    padding: 20px;
+    color: rgba(31, 31, 31, 0.74);
+    margin: 1em;
+    margin-bottom:4em ;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    border-radius: 5px;
+}
+
+.wall{
+    align-items: center;
+    text-align: center;
+    background-image: url(../img/back2.jpg);
+    background-size: cover;
+    height: 650px;
+    padding: 0;
+    border-top: 1em solid #686767ce;
+    border-bottom: 1em solid #383838ce; 
+    background-size: cover;
+    background-position:center center ;
+}
+@media(max-width:600px)
+{
+    .wall{
+        display: none;
+    }
+}
+
+.wrappa{
+    display: grid;
+    grid-template-columns: 110px 110px 110px 110px;
+    grid-template-rows: 110px 110px;
+}
+.grid-itemm{
+    background: rgba(255, 255, 255, 0.38);
+    border: 2px solid #383838a1;
+    border-radius: 5px;
+    
+    margin: 4px; 
+    /* dashboard icons customization*/    
+    font-size: 60px;   
+    transition: 0.4s;
+}
+
+.item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-items: center;
+
+    color: black;
+
+    /*centering the icon*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item2{
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+
+.item1:hover{
+    background-color: #caca51ce;
+    
+}
+
+.item2:hover{
+    background-color: #3aa150be;
+}
+
+.item3:hover
+{
+    background-color:  #ffffffbe;
+}
+.item3:hover .fa-color{color: #0e77a8;}
+
+
+.item4:hover{
+    background-color: #000000be ;
+    
+}
+.item4:hover .fa-color{
+    color: white;
+}
+
+.item5:hover{
+    background-color: #000000;
+}
+
+.grid-itemm:hover #spnn{opacity: 1;}
+
+
+span3{ font-size:large;
+    font-weight: 700;
+    position:absolute;
+      
+    width:140px;
+    background-color: white;
+    border-right:2px solid grey;
+    border-left: 2px solid grey;
+    color: var(--clr-dark);
+    border-radius: 5px;
+    opacity: 0;
+}
+
+
+.boio
+{
+    width: 30%;
+    height: 10em;
+    background-color: #005180a9;
+    
+    background-image: linear-gradient(to left bottom ,#0080808f, #87cfebd7,#00518096, #005180cb,#005180d7);
+    bottom: 2%;
+    transform: translate(-50%,-50%);
+    margin-left: 50%;    
+    position: fixed;
+
+    border-radius: 4px; 
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 3px solid  #00518069;
+    border-top:2px solid #0b5b8a69 ;
+    border-left: 3px solid #0b5b8a69 ;
+    overflow: hidden;
+    transition: 500ms ease-in-out;
+    animation: msgboio 8s ease-in;
+}
+.boicloser
+{
+    background-color: transparent;
+    padding:2px;
+    float: right;
+}
+.crossboi
+{
+    margin: 8px;
+    margin-left: 1.5em;
+    color: white;
+    
+}
+.fa-2x
+{  padding: 2px 4px;
+    float: right;
+    background-color: #e72d2d;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+.fa-2x:hover{
+    background-color:  #e7582d;
+}
+
+.cauboi
+{
+    margin-top: 1em;
+    margin-right: 20px;
+    height: 2.5em;
+    width: 2.5em;
+    float: left;
+}
+.boitxt
+{
+    margin-top: 0.5em;
+}
+.boinboi
+{   position: relative;
+    height: 80%;
+    width: 100%;
+    background-color: #ddc7dd;
+    clear:both;
+    border-radius: 3px;
+    color: black;
+    font-size: larger;
+    padding:0 1em;
+    padding-top: 0.5em;
+}
+@media(max-width:600px)
+{
+    .boio{
+        width: 85%;
+        margin-left: 50%;
+        height:10em;
+    }
+    .boitxt{
+        font-size: large;
+    }
+    
+    .cauboi{
+        margin-right: 10px;
+    }
+}
+@media(max-width:900px)
+{
+    .boio{
+        width: 85%;
+        margin-left: 50%;
+        height:10em;
+    }
+    .boitxt{
+        font-size: large;
+    }
+    
+    .cauboi{
+        margin-right: 10px;
+    }
+}
+
+.Closeboi .boio
+{  
+    /* transform: translateX(600%); */
+    width: 0;
+    height: 0;
+    border: 0;
+}
+
+@keyframes msgboio
+{
+    0%
+    {
+        opacity: 0;
+       
+    }
+
+    80%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
+        
+    }
+}
