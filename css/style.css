@@ -590,18 +590,29 @@ overflow-x: wrap;
     scale: 2;
     color: white;
     text-shadow: 1px 1px 1px #000000;
+    transition: 1s;
 }
+.fa-envelope:hover{scale: 2.3;}
+
+
 
 .fa-linkedin{
     scale: 2.2;
     color: white;
-    text-shadow: 0.5px 1px 1px #000000;
+    text-shadow: 0.5px 0px 0px #000000;
+    transition: 1s;
+
 }
+.fa-linkedin:hover{scale: 2.5;}
 
 .fa-github{
     scale: 2.2;
     color: white;
     text-shadow: 0.5px 1px 1px #000000;
+    transition: 1s;
+}
+.fa-github:hover{
+    scale: 2.5;
 }
 
 .fa-phone{
@@ -652,13 +663,19 @@ i{
     /* background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,1) 10%, rgba(0,0,0,0) 100%); */
     /* border-bottom: 1px solid #3e3e3ea0; */
-    border-right: 3px solid #156684a0;
-    border-left: 3px solid #aac0dda0;;
+    border-right: 3px solid #16607b;
+    border-left: 3px solid #aac0dda0;
     padding: 1rem;
     margin: 0px 2px;
     border-radius: 35%;
+    transition: 1s;
 }
 
+.long a:hover{
+    background-color: #0000006c;
+    /* border-left: 3px solid #00000000;
+    border-right: 3px solid #90909000; */
+}
 
 .item{
     /* margin: 2px; */
@@ -696,7 +713,7 @@ position: relative;
 .plan:hover .fa-cloud{
     /* scale: 1.4; */
     /* color: #ffffff; */
-    animation: launch 8s ease-in-out;
+    animation: launch 4s ease-in-out;
 }
 
 @keyframes launch{
@@ -710,15 +727,15 @@ position: relative;
         
     }
 
-    50%{
-        transform: translateY(6000%);
+    30%{
+        opacity: 0;
     }
 
-    51%{
+    41%{opacity: 0;
         transform: translateX(-900%);
         
     }
-    80%{transform: translateY(0);}
+    55%{opacity: 0.8;}
   
     100%{
         transform: translateX(0%);
