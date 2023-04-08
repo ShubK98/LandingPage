@@ -544,6 +544,45 @@ overflow-x: wrap;
     text-shadow: 1px 1px 1px #000000;
 }
 
+.fa-cloud{
+    scale: 1.6;
+    opacity: 0.8;
+    color: #417fe2;
+    text-shadow: 0px 1px 12px #000000fe;
+    /* text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000; */
+    position: absolute;
+    transition: 2s;
+    /* animation: launch 20s ease-in-out; */
+}
+
+/* .fa-cloud:hover{
+    scale: 1.4;
+} */
+/* @keyframes launch{
+    
+    0%{
+        transform: translateY(0px);
+    }
+  
+    25%{
+        transform: translateY(3px);
+    }
+
+    50%{
+        transform: translateY(-5px);
+    }
+  
+    75%{
+        transform: translateY(3px);
+       
+    }
+    100%{
+        transform: translateY(0px);
+       
+    }
+   
+} */
+
 .fa-envelope{
     scale: 2;
     color: white;
@@ -635,21 +674,30 @@ border-bottom: 2px solid rgba(135, 166, 234, 0.618);
 color: whitesmoke;
 font-weight: 100;
 font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
+font-size: 14px;
 text-shadow: 2px 2px 1px black;
 
 justify-content: center;
 align-items: center;
 /* border-bottom: 4px solid rgba(0, 0, 0, 0.438);
 border-right: 4px solid rgba(0, 0, 0, 0.438); */
+transition: 0.5s ease-in-out;
 }
 
 .item.plan{
-background-color: rgba(0, 0, 0, 0.395);
+background-color: #00000065;
 /* border: 0px 0px solid; */
 backdrop-filter: none;
 position: relative;
-/* animation: 35s panel infinite ease-in-out; */
+}
+
+.plan:hover{
+    
+}
+
+.item:hover:not(.plan){
+    background-color: rgba(37, 113, 220, 0.556);
+    transition: 1s;
 }
 
 
