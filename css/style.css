@@ -552,15 +552,13 @@ overflow-x: wrap;
     scale: 1.6;
     opacity: 0.8;
     color: #417fe2;
-    text-shadow: 0px 1px 12px #000000fe;
+    text-shadow: 0px 1px 10px #000000fe;    
     /* text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000; */
     transition: 2s;
     /* animation: launch 20s ease-in-out; */
 }
 
-/* .fa-cloud:hover{
-    scale: 1.4;
-} */
+
 /* @keyframes launch{
     
     0%{
@@ -692,11 +690,12 @@ z-index: 2;
 background-color: #00000065;
 /* border: 0px 0px solid; */
 backdrop-filter: none;
-position: relative;
 }
 
-.plan:hover{
-    
+
+.plan:hover .fa-cloud{
+    /* scale: 1.4; */
+    color: #ffffff;
 }
 
 .item:hover:not(.plan){
