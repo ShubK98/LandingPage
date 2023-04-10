@@ -66,6 +66,18 @@ body {
     overscroll-behavior: auto;
 
 }
+
+@media(min-width:600px)
+{
+    body{
+       
+    }
+    .maincontent{
+        max-width: 650px    ;
+    }
+   
+}
+
 @keyframes zoomies{
     
     0%{
@@ -176,195 +188,9 @@ header {
                 transition: 200ms;
 
             }
-            @media(min-width:600px)
-                {
-                    h2.section__title--Res
-                    {
-                        padding: 1em;
-                        margin-top: 0em;
-                        transition: 3s ease-in;
-                        
-                        border-right: 0;
-                        margin: 10px;
-                       
-                    }
-                    
-                    .but1{
-                        padding: 4em;
-                        animation: zoomies3 1.8s ease-in;
-                    }
-                    .but2
-                    {
-                        animation: zoomies3 1.8s ease-in;
-                    }
-                
-                }
+            
 
-                                                                .Myres
-                                                                {   
-                                                                    max-width: 1000px;
-                                                                    text-align: center;
-                                                                    margin:auto;
-                                                                    height:fit-content;
-                                                                    padding-bottom: 0vh;
-                                                                    padding-top: 12vh;
-                                                                    height: 100vh;
-                                                                   
-                                                                    /* animation: zoomies 2s ease-in; */
-                                                                }
-                                                                
-                                                                .Res
-                                                                {
-                                                                    background-color: #9F9F9F;
-                                                                   
-
-                                                                   
-                                                                }
-                                                                @media(max-width:600px)
-                                                                {
-                                                                    .wrp
-                                                                    {
-                                                                        animation: zoomiesh 0.6s ease-in; 
-                                                                    }
-                                                                    .Res
-                                                                    {
-                                                                        
-                                                                        padding-top: 1.6em;;
-                                                                    }
-                                                                }
-
-                                                                .section__title--Res
-                                                                {   margin-top: 3em;
-                                                                    padding:0.5em 0em;
-                                                                    margin-bottom: 0.5em; 
-                                                                    background-color: var var(--clr-accent);
-                                                                    border-radius: 5px;
-                                                                    border-bottom:1px solid #30303094;
-                                                                    border-right:1px solid #30303094;
-                                                                    /* border-left:1px solid #30303094; */
-                                                                    box-shadow: 2px 4px 5px 0px #46464671;
-                                                                    font-size: 30px;
-                                                                    
-                                                                    white-space:nowrap;
-
-                                                                }
-                                                                
-                                                                
-                                                                .buttn
-                                                                {   
-                                                                    background-color:#ffcc99a2;
-                                                                    color: var(--clr-dark);
-                                                                    margin-top: -1.5em;
-                                                                    margin-bottom: 1em;
-                                                                    padding:18px;
-                                                                    white-space:nowrap;
-                                                                    font-weight: 570;
-                                                                    border-radius: 4px;
-                                                                    margin:8px;
-                                                                    font-size: 20px;
-                                                                    cursor: pointer;
-                                                                    text-decoration: none;
-                                                                    border:2px solid #30303096;     
-                                                                    border-top:2px solid transparent;
-                                                                    border-left:2px solid transparent;      
-                                                                    display: inline-block;
-                                                                    padding: 20px 0px;
-                                                                    width: 46%;
-                                                                    box-shadow: 2px 4px 5px 0px #46464671;
-                                                                    transition: 0.3s;
-
-                                                                }
-
-                                                                @media(min-width:600px)
-                                                                {
-                                                                    .buttn
-                                                                    {
-                                                                        padding: 2em;
-                                                                    }
-                                                                }
-
-                                                                .buttn:hover
-                                                                {
-                                                                    border:2px solid #30303067;
-                                                                    border-bottom:2px solid transparent;
-                                                                    border-right:2px solid transparent;
-                                                                    background-color: #e2aa8c9a;  /*#d6a78d*/
-                                                                    box-shadow: 0px 0px 0px 0px ;
-                                                                    
-                                                                /*    transform:scale(0.98);    */
-                                                                }
-                                                                @media (max-width: 600px)
-                                                                {
-                                                                
-                                                                    .Myres 
-                                                                        {
-                                                                       height: 90%;
-                                                                       padding-bottom: 2em;
-                                                                       /* animation: zoomies 4s ease-in; */
-                                                                       
-                                                                        }
-                                                                    .buttn
-                                                                        {
-                                                                            display: block;
-                                                                            width:60%;
-                                                                            margin:10px;
-                                                                            margin-left: auto;
-                                                                            margin-right: auto;
-                                                                            margin-bottom: 5px;
-                                                                            width: 95%;
-                                                                            font-size: large;
-                                                                            padding: 18px 0px;
-                                                                            
-                                                                            white-space:nowrap;
-                                                                            
-
-
-                                                                        }
-
-                                                                        .buttn:hover{
-                                                                            transform: scale(0.95);
-                                                                        }
-                                                                        .but1{
-                                                                            animation: zoomies3 2s ease-in;
-                                                                        }
-                                                                        .but2{
-                                                                            animation: zoomies3 2.6s ease-in;
-                                                                        }
-                                                                        .section__title--Res
-                                                                        {
-                                                                            width: 95%;
-                                                                            margin:auto;
-                                                                            margin-top: 8px;
-                                                                            margin-bottom: 8px;
-                                                                            background-color: #ffffff15;
-                                                                            transition: 300ms;
-                                                                            border-right: 0px;
-                                                                    animation: zoomies3 1.4s ease-in;
-
-                                                                        }
-                                                                       
-                                                                    
-                                                                } 
-
-                                                                @keyframes zoomies3{
-    
-                                                                    0%{
-                                                                        width: 0;
-                                                                        color: transparent;
-                                                                    }
-                                                                    60%{    
-                                                                        color: transparent;
-                                                                    }
-                                                                     85%{
-
-                                                                        color: transparent;
-                                                                    }
-                                                                    100%{
-                                                                        width: 1;
-                                                                       
-                                                                    }
-                                                                   
-                                                                }
+                                                              
 .kuchb
 {
     -webkit-user-select: none;
@@ -376,7 +202,7 @@ header {
     font-size: x-large;
     width: 100%;
     /* background-color: #6e6e6e83;   */
-    background-color: #5a545269;  
+    background-color: #26262681;  
     color: white; 
     align-content: center;
     border-bottom: 1px solid #30303048;
@@ -439,9 +265,6 @@ pointer-events: none;
     left: -30;
 }
 
-.item{
-
-}
 
 @keyframes zoom{
     from{}
@@ -464,9 +287,10 @@ pointer-events: none;
 
 .kuchb p{
     /* background-color: #b4afafbd; */
-    background-image: linear-gradient(55deg,#335cc434,#9f9f9f,#3266bab4,#051b7a00);
+    background-image: linear-gradient(55deg,#335cc434,#6e93dc,#3266bab4,#051b7a00);
     width: 85%;
-    color: black;
+    color: rgb(193, 189, 189);
+    text-shadow: 2px 2px 2px #000000c4;
     border-radius: 4px;
     margin-top: 0;
     margin-bottom: 0;
@@ -479,7 +303,7 @@ pointer-events: none;
     border-left: 2px solid #e4e4e45b;
     border-radius: 24px;
     background-size: 400% ;
-    animation: flash 6s infinite alternate ease-in;
+    animation: flash 10s infinite alternate ease-in;
 }
 
 @keyframes flash{
@@ -672,9 +496,9 @@ i{
 }
 
 .long a:hover{
-    background-color: #0000006c;
-    /* border-left: 3px solid #00000000;
-    border-right: 3px solid #90909000; */
+    background-color: #143d61c2;
+    border-right: 3px solid #103454;
+    border-left: 3px solid #aac0dda0;
 }
 
 .item{
@@ -715,6 +539,8 @@ position: relative;
     /* color: #ffffff; */
     animation: launch 4s ease-in-out;
 }
+/* .plan:hover{
+} */
 
 @keyframes launch{
     
@@ -744,19 +570,15 @@ position: relative;
    
 }
 
+
 .item:hover:not(.plan){
-    background-color: rgba(37, 113, 220, 0.556);
+    background-color: #2571dc8e;
     transition: 1s;
 }
 
 
-
 .bb{
-/* color: rgb(0, 0, 0);
-background-color: rgb(196, 196, 196);
-padding: 2px;
-width: 100%; */
-font-weight: 600;
+font-weight: 500;
 }
 
 
@@ -774,89 +596,14 @@ font-weight: 600;
     grid-column: span 3;
 }
 
-.partition
-{
-    display:flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    max-width: 1000px;
-    width:auto;
 
-   
-    margin:auto;
-}
-.box
-{   
-    margin:auto;
-    width:43%;
-    min-width: 250px;
-    text-align:centers;
-    font-weight: 600;
-    letter-spacing: 1px;
-    min-height:350px;
-    margin:auto;
-    border-radius: 10px;
-    color:var(--clr-dark);
-    display: inline-block;
-    height: 404px;
-}
 
-#one
-{
-    background-color: var(--clr-light);
-    
-}
-
-#two
-{
-    background-color: var(--clr-light);
-  
-}
-
-@media (max-width: 600px)
-    {
-        .my-work
-        {
-            padding-top: 7.5em;
-        }
-        #two{
-           margin-top: 20px;
-        }    
-    }            
+         
       
 
-.skillhead
-{   
-    padding:20px;
-    background-color: #16e0bd;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 
-}
 
-.upp{
-    margin-bottom: 2em;
-    position: absolute;
-    right: 5%;
-    padding:2px 16px ;
-    font-size: 55px;
-    color: var(--clr-accent);
-    transition: 0.2s;
-    background-color: transparent;
-    filter: blur();
-    overflow: hidden;
-    border: 4px solid var(--clr-accent);
-    border-bottom:4px solid cornflowerblue;
-    border-right:4px solid cornflowerblue;
-    border-radius: 50%;
-    
-    box-shadow: 5px 5px 10px 0px var(--clr-accent);
-}
-.upp:hover{
-   transform: scale(0.96);
-   box-shadow: 4px 4px 8px 0px var(--clr-accent);
 
-}
 
 @media(max-width:600px)
 {
@@ -949,56 +696,6 @@ font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.item2{
-  grid-column-start: 2;
-  grid-column-end: 4;
-}
-
-
-.item1:hover{
-    background-color: #caca51ce;
-    
-}
-
-.item2:hover{
-    background-color: #3aa150be;
-}
-
-.item3:hover
-{
-    background-color:  #ffffffbe;
-}
-.item3:hover .fa-color{color: #0e77a8;}
-
-
-.item4:hover{
-    background-color: #000000be ;
-    
-}
-.item4:hover .fa-color{
-    color: white;
-}
-
-.item5:hover{
-    background-color: #000000;
-}
-
-.grid-itemm:hover #spnn{opacity: 1;}
-
-
-span3{ font-size:large;
-    font-weight: 700;
-    position:absolute;
-      
-    width:140px;
-    background-color: white;
-    border-right:2px solid grey;
-    border-left: 2px solid grey;
-    color: var(--clr-dark);
-    border-radius: 5px;
-    opacity: 0;
 }
 
 
