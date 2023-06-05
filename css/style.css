@@ -282,15 +282,16 @@ pointer-events: none;
 
 .kuchb strong{
     font-size: x-large;
-    
 }
 
 .kuchb p{
     /* background-color: #b4afafbd; */
     background-image: linear-gradient(55deg,#335cc434,#6e93dc,#3266bab4,#051b7a00);
     width: 85%;
-    color: rgb(193, 189, 189);
-    text-shadow: 2px 2px 2px #000000c4;
+    color: #ffffffb9;
+    /* font-family:sans-serif; */
+    font-size: 22px;
+    text-shadow: 2px 2px 2px #000000fb;
     border-radius: 4px;
     margin-top: 0;
     margin-bottom: 0;
