@@ -789,7 +789,6 @@ font-weight: 500;
 }
 
 
-
 @media(max-width:600px)
 {
     .upp{
@@ -848,7 +847,7 @@ font-weight: 500;
     /* background-color: #235d83; */
     /* background: rgb(35,93,131); */
     background-color: #0e49a8c2;
-    background: linear-gradient(180deg,#365e9a 45%, #1e5d88f9 100%);
+    background: linear-gradient(180deg,#597cb0 45%, #163e58f9 100%);
 
     transform: translateX(100%);
 
@@ -907,24 +906,27 @@ ul.Abtli{
 
 
 .backbtn{
-    padding: 10px;
+    /* padding: 10px;
     /* background-color: #168888; */
-    /* background: #296390; */
-    background: linear-gradient(140deg, #c3c3c3c0 5%, #434343 100%);    
-    font-size: 30px;
+    /* background: #1e2f3c44; */
+    background: linear-gradient(180deg, #00000000 60%, #23232368 100%);    
+    font-size: 30px; 
 }
 
 .iconback{
-    padding: 8px 16px;
+    position: absolute;
+    right: 10px;
+    bottom: 1em;
+    
+    padding: 8px 20px;
     border-radius: 6px;
-    border: 2px solid #3b3b3bf4;
-    border-top: 2px transparent;
-    border-left: 2px transparent;
+    /* border: 2px solid #3b3b3bf4; */
+    /* border-left: 2px solid #172f53b6; */
+    box-shadow: -4px 2px 8px #3a3a3a78;
 
     color: #202020;
-    /* background-color: #6dabc268; */
     background: #5491c186;
-    background: linear-gradient(110deg, #d3dde966 10%, #4f4f4fcd 100%);
+    background: linear-gradient(110deg, #d3dde9b8 10%, #1a5b984f 100%);
 }
 
 .RtoL .MenuR{
