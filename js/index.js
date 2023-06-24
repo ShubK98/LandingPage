@@ -7,6 +7,21 @@ MenuRTogg.addEventListener('click', () => {
       
     });
 
+var MenuR2Togg = document.querySelector('.hobbi');
+
+MenuR2Togg.addEventListener('click', () => {
+        document.body.classList.toggle ('R2toL');
+        
+    });
+
+    var toggleBackR2 = document.querySelector('.backbtnR2');
+
+    toggleBackR2.addEventListener('click', () => {
+        document.body.classList.toggle ('R2toL');
+        document.getElementById("MenuR2").style.transitionDuration = "0.5s";
+      
+    });
+
 
 
 //menu on Left slides in
