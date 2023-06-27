@@ -469,7 +469,7 @@ pointer-events: none;
     width: 85%;
     color: #ffffffb9;
     /* font-family:sans-serif; */
-    font-size: 22px;
+    font-size: 20px;
     text-shadow: 2px 2px 2px #000000fb;
     border-radius: 4px;
     margin-top: 0;
@@ -484,6 +484,16 @@ pointer-events: none;
     border-radius: 24px;
     background-size: 400% ;
     animation: flash 10s infinite alternate ease-in;
+}
+
+@media(max-width:325px)
+{
+    .kuchb p{
+        font-size: 14px;
+    }
+    .kuchb strong{
+        font-size: 18px;
+    }
 }
 
 @keyframes flash{
