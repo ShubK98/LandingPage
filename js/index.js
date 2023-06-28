@@ -15,7 +15,7 @@ MenuRTogg.addEventListener('click', () => {
 
     var MenuLTogg = document.querySelector('.resumeMenu');
 
-MenuLTogg.addEventListener('click', () => {
+    MenuLTogg.addEventListener('click', () => {
         document.body.classList.toggle ('LtoR');
       
     });
@@ -70,5 +70,46 @@ MenuSkill.addEventListener('click', () => {
     toggleBackski.addEventListener('click', () => {
         document.body.classList.toggle ('R3toL');
         document.getElementById("MenuR3").style.transitionDuration = "0.5s";
+      
+    });
+
+
+    //Code to animate resume Menu width 0 to 1
+    const buttn = document.querySelector(".but1");
+    const buttn2 = document.querySelector(".but2");
+    const buttntitle = document.querySelector(".resDown");
+
+    const wrap = document.querySelector(".wrp");
+
+
+
+    MenuLTogg.addEventListener('click', () => {
+        buttn.classList.toggle ('addedclass');
+      
+    });
+
+    MenuLTogg.addEventListener('click', () => {
+        buttn2.classList.toggle ('addedclass');
+      Animation.transitionDuration
+    });
+
+    MenuLTogg.addEventListener('click', () => {
+        wrap.classList.toggle ('addedclass2');
+      
+    });
+
+    //to toggle back the class so we can re animate the resume Menu
+    toggleBackL.addEventListener('click', () => {
+        buttn.classList.toggle ('addedclass');
+      
+    });
+
+    toggleBackL.addEventListener('click', () => {
+        buttn2.classList.toggle ('addedclass');
+      Animation.transitionDuration
+    });
+
+    toggleBackL.addEventListener('click', () => {
+        wrap.classList.toggle ('addedclass2');
       
     });

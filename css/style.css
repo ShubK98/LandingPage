@@ -143,7 +143,18 @@ body {
 }
 
 
+.but1{
+    /* animation: zoomies3 2s ease-in; */
 
+}
+.but2
+{
+    /* animation: zoomies3 2.6s ease-in; */
+}
+.buttn{
+    text-shadow: 1px 1px 1px #ffffffae;
+
+}
 
 
 
@@ -189,11 +200,19 @@ header {
                 border-radius: 6px;
 
                 box-shadow: 4px 8px 6px 2px rgba(128, 128, 128, 0);
-                transition: 200ms;
+                /* transition: 200ms; */
 
             }
             
-
+            .addedclass{
+                animation: zoomies3 0.8s ease-in;
+            }
+            .addedclass2{
+                animation: zoomheight 0.2s ease-in;
+            }
+            .resDown{
+                /* background-color: red; */
+            }
             .Myres
             {   
                 max-width: 1000px;
@@ -215,7 +234,7 @@ header {
             {
                 .wrp
                 {
-                    animation: zoomiesh 0.6s ease-in; 
+                    /* animation: zoomiesh 0.6s ease-in;  */
                 }
                 .Res
                 {
@@ -239,12 +258,12 @@ header {
                     
                     .but1{
                         padding: 4em;
-                        animation: zoomies3 1.8s ease-in;
+                        /* animation: zoomies3 1.8s ease-in; */
                     }
-                    .but2
+                    /* .but2
                     {
                         animation: zoomies3 1.8s ease-in;
-                    }
+                    } */
                 
                 }
 
@@ -315,7 +334,6 @@ header {
                                 padding: 18px 0px;
                                 
                                 white-space:nowrap;
-                                
 
 
                             }
@@ -323,12 +341,12 @@ header {
                             .buttn:hover{
                                 transform: scale(0.95);
                             }
-                            .but1{
+                            /* .but1{
                                 animation: zoomies3 2s ease-in;
                             }
                             .but2{
                                 animation: zoomies3 2.6s ease-in;
-                            }
+                            } */
                             .section__title--Res
                             {
                                 width: 95%;
@@ -351,16 +369,40 @@ header {
                         0%{
                             width: 0;
                             color: transparent;
+                            text-shadow: none;
                         }
                         60%{    
                             color: transparent;
+                            text-shadow: none;
+
                         }
                             85%{
 
                             color: transparent;
+                            text-shadow: none;
+
                         }
                         100%{
                             width: 1;
+                            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.622);
+                        }
+                        
+                    }
+                    @keyframes zoomheight{
+
+                        0%{
+                            transform: scaleY(0);
+                            /* color: transparent; */
+                        }
+                        60%{    
+                            /* color: transparent; */
+                        }
+                            85%{
+
+                            /* color: transparent; */
+                        }
+                        100%{
+                            transform: scaleY(1);
                             
                         }
                         
@@ -1016,7 +1058,7 @@ height: 100vh;
     list-style: none;
     color: white;
     border-radius: 15px;
-    font-size: medium;
+    font-size: 0.9em;
     font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
     box-shadow: 3px 3px 8px #0b0b0b98;
     display: inline-block;
@@ -1030,10 +1072,9 @@ ul.Skillli{
 }
 
 .skillt{
-    /* display:table-row; */
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    border-bottom: 1px solid #ede9e9b2;
+    border-bottom: 1px solid #c6c6c673;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    /* font-style: italic; */
 }
