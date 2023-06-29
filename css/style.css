@@ -141,6 +141,25 @@ body {
     }
    
 }
+.addedclass3{
+animation: zoomskill 0.6s linear;
+}
+
+@keyframes zoomskill{
+    
+    0%{
+        transform: translateX(80%);
+    }
+    20%{
+        transform: translateX(80%);
+    }
+     
+    100%{
+        transform: translateX(0%);
+        
+    }
+   
+}
 
 
 .but1{
@@ -212,6 +231,7 @@ header {
             }
             .resDown{
                 /* background-color: red; */
+                
             }
             .Myres
             {   
@@ -290,7 +310,7 @@ header {
                         width: 46%;
                         box-shadow: 2px 4px 5px 0px #46464671;
                         transition: 0.3s;
-
+                        /* color: #0a3962; */
                     }
 
                     @media(min-width:600px)
@@ -812,7 +832,9 @@ border-bottom: 2px solid #15151534;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #52729479;
+    /* background: #52729479; */
+    background-color: #144c9a74;
+
     /* background: #d0d0d08e; */
     /* background: linear-gradient(170deg,#1f63b100 40%, #50505052 100%); */
 
@@ -820,10 +842,10 @@ border-bottom: 2px solid #15151534;
     -webkit-backdrop-filter: blur( 6px );
     border-radius: 8px;
 
-    border-left: 2px solid #87a6ea64;
-    border-top: 2px solid #87a6ea64;
-    border-right: 2px solid #1515155a;
-    border-bottom: 2px solid #1515155a;
+    border-left: 4px solid #87a6ea64;
+    border-top: 4px solid #87a6ea64;
+    border-right: 4px solid #1515155a;
+    border-bottom: 4px solid #1515155a;
 
     /* font-weight: 100; */
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -838,7 +860,7 @@ border-bottom: 2px solid #15151534;
     z-index: 2;
 }
 .item2:hover{
-    background-color: #144c9aaa;
+    background-color: #1f57a629;
     transition: 1s;
     
 }
@@ -1085,8 +1107,11 @@ ul.Skillli{
     background-color: #3b3b3b3a;
 }
 
-.framew li{
+/* .framew li{
     display: inline-block;
+} */
+.slideani{
+
 }
 
 .R3toL .Menuski{

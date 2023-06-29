@@ -106,10 +106,31 @@ MenuSkill.addEventListener('click', () => {
 
     toggleBackL.addEventListener('click', () => {
         buttn2.classList.toggle ('addedclass');
-      Animation.transitionDuration
     });
 
     toggleBackL.addEventListener('click', () => {
         wrap.classList.toggle ('addedclass2');
       
+    });
+
+
+    //Skill Menu animation
+    //Code to animate skill Menu width 0 to 1
+    const ski1 = document.querySelector(".slideani1");
+    const ski2 = document.querySelector(".slideani2");
+
+    MenuSkill.addEventListener('click', () => {
+        ski1.classList.toggle ('addedclass3');
+    });
+    MenuSkill.addEventListener('click', () => {
+        ski2.classList.toggle ('addedclass3');
+    });
+
+    //code to toggle out added class on clicking back button
+
+    toggleBackski.addEventListener('click', () => {
+        ski1.classList.toggle ('addedclass3');
+    });
+    toggleBackski.addEventListener('click', () => {
+        ski2.classList.toggle ('addedclass3');
     });
