@@ -142,16 +142,16 @@ body {
    
 }
 .addedclass3{
-animation: zoomskill 0.6s linear;
+animation: zoomskill 1s linear;
 }
+/* .addedclass3delay{
+    animation: zoomskill 1s linear;
+    } */
 
 @keyframes zoomskill{
     
     0%{
-        transform: translateX(80%);
-    }
-    20%{
-        transform: translateX(80%);
+        transform: translateX(100%);
     }
      
     100%{
@@ -227,7 +227,7 @@ header {
                 animation: zoomies3 0.8s ease-in;
             }
             .addedclass2{
-                animation: zoomheight 0.3s ease-in;
+                animation: zoomheight 0.4s ease-in;
             }
             .resDown{
                 /* background-color: red; */
@@ -422,7 +422,6 @@ header {
                         }
                         100%{
                             transform: scaleY(1);
-                            
                         }
                         
                     }
