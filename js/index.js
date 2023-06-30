@@ -11,6 +11,7 @@ MenuRTogg.addEventListener('click', () => {
 
 
 
+
 //menu on Left slides in
 
     var MenuLTogg = document.querySelector('.resumeMenu');
@@ -72,6 +73,29 @@ MenuSkill.addEventListener('click', () => {
         document.getElementById("MenuR3").style.transitionDuration = "0.5s";
       
     });
+        //Animating opening te popup message
+
+        const boioi = document.querySelector(".boio");
+
+        MenuRTogg.addEventListener('click', () => {
+            boioi.classList.toggle ('addtoboio');
+          
+        });
+
+        //toggle back added class to boio
+        toggleBackR.addEventListener('click', () => {
+            boioi.classList.toggle ('addtoboio');
+        });
+
+        
+        // Close the message
+
+        const Crosscloser = document.querySelector('.boicloser');
+
+        Crosscloser.addEventListener('click', () => {
+                document.body.classList.toggle ('Closeboi');
+        });
+    
 
 
     //Code to animate resume Menu width 0 to 1
